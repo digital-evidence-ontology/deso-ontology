@@ -1,0 +1,2680 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/spec/#term_" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY geo "http://www.w3.org/2003/01/geo/wgs84_pos#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY prism "http://prismstandard.org/namespaces/basic/2.0/" >
+    <!ENTITY postcode "http://data.ordnancesurvey.co.uk/ontology/postcode/" >
+    <!ENTITY cybox "https://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd" >
+    <!ENTITY version15 "http://www.semanticweb.org/owenbrady/ontologies/2015/version15#" >
+    <!ENTITY deso_ec "http://www.semanticweb.org/owenbrady/ontologies/2014/DESOEvidenceCodes#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/owenbrady/ontologies/2014/Jan#"
+     xml:base="http://www.semanticweb.org/owenbrady/ontologies/2014/Jan"
+     xmlns:version15="http://www.semanticweb.org/owenbrady/ontologies/2015/version15#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:foaf="http://xmlns.com/foaf/spec/#term_"
+     xmlns:postcode="http://data.ordnancesurvey.co.uk/ontology/postcode/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:deso_ec="http://www.semanticweb.org/owenbrady/ontologies/2014/DESOEvidenceCodes#"
+     xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/"
+     xmlns:cybox="https://cybox.mitre.org/XMLSchema/common/2.1/cybox_common.xsd">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/owenbrady/ontologies/2015/version15"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://prismstandard.org/namespaces/basic/2.0/url -->
+
+    <owl:AnnotationProperty rdf:about="&prism;url"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#complexStructureDefinition -->
+
+    <owl:AnnotationProperty rdf:about="&version15;complexStructureDefinition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_09cd2f62_cf9a_4ac6_b6f5_bb76a9fc3fae -->
+
+    <owl:ObjectProperty rdf:about="&version15;DESO_09cd2f62_cf9a_4ac6_b6f5_bb76a9fc3fae">
+        <rdfs:label>hasWhatTimestamp</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&version15;DESO_79a1e405_2b5f_48fc_88ff_9eacfbe90640"/>
+        <rdfs:domain rdf:resource="&version15;What"/>
+        <rdfs:range rdf:resource="&version15;What_timestamps"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_64580e99_0b87_4b5c_b0e6_6a819bafaa84 -->
+
+    <owl:ObjectProperty rdf:about="&version15;DESO_64580e99_0b87_4b5c_b0e6_6a819bafaa84">
+        <rdfs:label>hasWhoTimestamp</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&version15;DESO_79a1e405_2b5f_48fc_88ff_9eacfbe90640"/>
+        <rdfs:domain rdf:resource="&version15;Who"/>
+        <rdfs:range rdf:resource="&version15;Who_timestamps"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_79a1e405_2b5f_48fc_88ff_9eacfbe90640 -->
+
+    <owl:ObjectProperty rdf:about="&version15;DESO_79a1e405_2b5f_48fc_88ff_9eacfbe90640">
+        <rdfs:label>hasAssociatedTimestamp</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_919616a7_11dd_46f5_b57f_5c36a7329464 -->
+
+    <owl:ObjectProperty rdf:about="&version15;DESO_919616a7_11dd_46f5_b57f_5c36a7329464">
+        <rdfs:label>hasWhereTimestamp</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&version15;DESO_79a1e405_2b5f_48fc_88ff_9eacfbe90640"/>
+        <rdfs:domain rdf:resource="&version15;Where"/>
+        <rdfs:range rdf:resource="&version15;Where_timestamps"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeAuthStatNonPeerReviewed -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeAuthStatNonPeerReviewed">
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvCodeAuthorStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeAuthStatNonPeerReviewedNotSupported -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeAuthStatNonPeerReviewedNotSupported">
+        <rdfs:comment>Not supported - no details of experimentation or availability of data</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvCodeAuthStatNonPeerReviewed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeAuthStatNonPeerReviewedSupported -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeAuthStatNonPeerReviewedSupported">
+        <rdfs:comment>Supported - experiment detailed and data available</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvCodeAuthStatNonPeerReviewed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeAuthStatPeerReviewed -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeAuthStatPeerReviewed">
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvCodeAuthorStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeAuthStatPeerReviewedNotSupported -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeAuthStatPeerReviewedNotSupported">
+        <rdfs:comment>Not supported - no details of experimentation or availability of data</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvCodeAuthStatPeerReviewed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeAuthStatPeerReviewedSupported -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeAuthStatPeerReviewedSupported">
+        <rdfs:comment>Supported - experiment detailed and data available</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvCodeAuthStatPeerReviewed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeAuthorStatement -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeAuthorStatement">
+        <rdfs:comment>Assertion made in published text of some nature (AS)</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvenanceReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeCaseObservation -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeCaseObservation">
+        <rdfs:comment>Observed when examining data on Case</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvenanceReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeCaseObservationDirect -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeCaseObservationDirect">
+        <rdfs:comment>Direct - observed and tested on systems upon which observation is being made and to which applied</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvCodeCaseObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeCaseObservationIndirect -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeCaseObservationIndirect">
+        <rdfs:comment>Indirect - observed on case or system different to which being applied. Have to take into account extraneous factors - and it is not a &apos;clean&apos; system.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvCodeCaseObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeExperimental -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeExperimental">
+        <rdfs:comment>Assertion about artefact made after experimentation (EXP)</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvenanceReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeExperimentalDirect -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeExperimentalDirect">
+        <rdfs:comment>Direct - experiment conducted on same system as the one to which artefact is applied</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvCodeExperimental"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeExperimentalIndirect -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeExperimentalIndirect">
+        <rdfs:comment>Indirect - experiment conducted on different one to which artefact applied and inference is drawn.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvCodeExperimental"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeManufacturerStatement -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeManufacturerStatement">
+        <rdfs:comment>Manufacturer Statement - technical specification on function of system. (MAN)</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvenanceReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvCodeNoEvidenceAvailable -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvCodeNoEvidenceAvailable">
+        <rdfs:comment>There is no evidence to support the assertion that the represented data is the artefact</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasProvenanceReference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasProvenanceReference -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasProvenanceReference">
+        <rdfs:comment>The set of provevnance codes used in digital evidence artefact assertions</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasSupportingReference -->
+
+    <owl:ObjectProperty rdf:about="&version15;hasSupportingReference"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#isArtefactType -->
+
+    <owl:ObjectProperty rdf:about="&version15;isArtefactType">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&version15;Artefact_Location"/>
+        <rdfs:range rdf:resource="&version15;Artefact_Type_Identifier"/>
+        <owl:propertyDisjointWith rdf:resource="&version15;isLocatedAt"/>
+        <owl:inverseOf rdf:resource="&version15;isLocatedAt"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#isLocatedAt -->
+
+    <owl:ObjectProperty rdf:about="&version15;isLocatedAt">
+        <rdfs:range rdf:resource="&version15;Artefact_Location"/>
+        <rdfs:domain rdf:resource="&version15;Artefact_Type_Identifier"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://prismstandard.org/namespaces/basic/2.0/organization -->
+
+    <owl:DatatypeProperty rdf:about="&prism;organization">
+        <rdfs:subPropertyOf rdf:resource="&version15;referenceDetails"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/basic/2.0/startingPage -->
+
+    <owl:DatatypeProperty rdf:about="&prism;startingPage">
+        <rdfs:subPropertyOf rdf:resource="&version15;referenceDetails"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://prismstandard.org/namespaces/basic/2.0/url -->
+
+    <owl:DatatypeProperty rdf:about="&prism;url">
+        <rdfs:subPropertyOf rdf:resource="&version15;referenceDetails"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/author -->
+
+    <owl:DatatypeProperty rdf:about="&dc;author">
+        <rdfs:subPropertyOf rdf:resource="&version15;referenceDetails"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:DatatypeProperty rdf:about="&dc;date">
+        <rdfs:subPropertyOf rdf:resource="&version15;referenceDetails"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:DatatypeProperty rdf:about="&dc;title">
+        <rdfs:subPropertyOf rdf:resource="&version15;referenceDetails"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Location -->
+
+    <owl:DatatypeProperty rdf:about="&version15;Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#byteOffset -->
+
+    <owl:DatatypeProperty rdf:about="&version15;byteOffset">
+        <rdfs:comment>Byte offset from start of file</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;position"/>
+        <rdfs:range rdf:resource="&xsd;hexBinary"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#byteOffsetDeviceFirstSector -->
+
+    <owl:DatatypeProperty rdf:about="&version15;byteOffsetDeviceFirstSector">
+        <rdfs:subPropertyOf rdf:resource="&version15;byteOffset"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#byteOffsetStartOfFile -->
+
+    <owl:DatatypeProperty rdf:about="&version15;byteOffsetStartOfFile">
+        <rdfs:subPropertyOf rdf:resource="&version15;byteOffset"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#byteOffsetVolumeFirstSector -->
+
+    <owl:DatatypeProperty rdf:about="&version15;byteOffsetVolumeFirstSector">
+        <rdfs:subPropertyOf rdf:resource="&version15;byteOffset"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#dateAddedToDESO -->
+
+    <owl:DatatypeProperty rdf:about="&version15;dateAddedToDESO">
+        <rdfs:comment>Date that the individual was addeed to DESO.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#entryFormat -->
+
+    <owl:DatatypeProperty rdf:about="&version15;entryFormat">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment>How the entry is to be represnted for comparison - hex, decimal or ascii</rdfs:comment>
+        <rdfs:domain rdf:resource="&version15;Artefact_Type_Identifier"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+        <rdfs:range rdf:resource="&xsd;hexBinary"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#entryLength -->
+
+    <owl:DatatypeProperty rdf:about="&version15;entryLength">
+        <rdfs:comment>The length of the value as a decimal interger. If no length is specified, then another method for the finding the end of the entry must be specified.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasAbsolutePosition -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasAbsolutePosition">
+        <rdfs:subPropertyOf rdf:resource="&version15;position"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasFieldNumber -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasFieldNumber">
+        <rdfs:subPropertyOf rdf:resource="&version15;hasRelativePosition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasFieldSeparator -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasFieldSeparator">
+        <rdfs:subPropertyOf rdf:resource="&version15;hasRelativePosition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasFirmwareCommand -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasFirmwareCommand">
+        <rdfs:comment>This data property is to be used when a specific hardware call is to be used - such as extrcating a serial number from a device such as a hard disk or USB drive.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;isNotInFile"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasLinkFileLocation -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasLinkFileLocation">
+        <prism:url rdf:datatype="&xsd;anyURI">http://msdn.microsoft.com/en-us/library/dd891253.aspx</prism:url>
+        <rdfs:comment>Link files have a modular structure and these modules themselves appear extensible. Each module has a number of fields which may contain data.
+The most sensible way of representing this is a file path to the required block, such as &apos;\LinkInfo\ShelLinkHeader&apos; and then the number of the field in that block.
+The blocks are:
+LinkTargetIDList
+LinkInfo
+ExtraData
+ShellLinkHeader
+StringData</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasAbsolutePosition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasNonUserIdentifiableFilePath -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasNonUserIdentifiableFilePath">
+        <rdfs:comment>Intended for use when there is an absolute path to the file containing the artefact.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;isWithinFile"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasParsableStructure -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasParsableStructure">
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasPlistPath -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasPlistPath">
+        <rdfs:comment>Plist locaton can always be defined as an XML. Any Plists that are binary can be easily converted to XML.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasAbsolutePosition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasRelativePosition -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasRelativePosition">
+        <rdfs:subPropertyOf rdf:resource="&version15;position"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasSqliteFieldName -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasSqliteFieldName">
+        <rdfs:subPropertyOf rdf:resource="&version15;hasSqliteLocation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasSqliteLocation -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasSqliteLocation">
+        <rdfs:subPropertyOf rdf:resource="&version15;hasAbsolutePosition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasSqliteTableName -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasSqliteTableName">
+        <rdfs:subPropertyOf rdf:resource="&version15;hasSqliteLocation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasUserIdentifiableFilePath -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasUserIdentifiableFilePath">
+        <rdfs:comment>Intended for use when file containing the artefcat is in a user profile. Example of use [User]\Documents and Settings...</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;isWithinFile"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#hasWindowsRegistryPath -->
+
+    <owl:DatatypeProperty rdf:about="&version15;hasWindowsRegistryPath">
+        <rdfs:comment>XML representation of path</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasAbsolutePosition"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#isDirectoryEntry -->
+
+    <owl:DatatypeProperty rdf:about="&version15;isDirectoryEntry">
+        <rdfs:subPropertyOf rdf:resource="&version15;isNotInFile"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#isInMBR -->
+
+    <owl:DatatypeProperty rdf:about="&version15;isInMBR">
+        <rdfs:subPropertyOf rdf:resource="&version15;isNotInFile"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#isInVBR -->
+
+    <owl:DatatypeProperty rdf:about="&version15;isInVBR">
+        <rdfs:subPropertyOf rdf:resource="&version15;isNotInFile"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#isNotInFile -->
+
+    <owl:DatatypeProperty rdf:about="&version15;isNotInFile">
+        <rdfs:subPropertyOf rdf:resource="&version15;Location"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#isWithinFile -->
+
+    <owl:DatatypeProperty rdf:about="&version15;isWithinFile">
+        <rdfs:comment>To be used when specifying a path to the file containing the artefact.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;Location"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#position -->
+
+    <owl:DatatypeProperty rdf:about="&version15;position"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#prefix -->
+
+    <owl:DatatypeProperty rdf:about="&version15;prefix">
+        <rdfs:comment>ASCII text preceding artefact</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasRelativePosition"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#referenceDetails -->
+
+    <owl:DatatypeProperty rdf:about="&version15;referenceDetails"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#suffix -->
+
+    <owl:DatatypeProperty rdf:about="&version15;suffix">
+        <rdfs:comment>ASCII text following aretfact</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&version15;hasRelativePosition"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Address_Identifier -->
+
+    <owl:Class rdf:about="&version15;Address_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Where"/>
+        <rdfs:comment>These terms are taken from the Postcode Ontology at: http://data.ordnancesurvey.co.uk/ontology/postcode/</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Apple_Device -->
+
+    <owl:Class rdf:about="&version15;Apple_Device">
+        <rdfs:subClassOf rdf:resource="&version15;Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Apple_Mobile_Device -->
+
+    <owl:Class rdf:about="&version15;Apple_Mobile_Device">
+        <rdfs:subClassOf rdf:resource="&version15;Apple_Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Apple_Operating_Systems -->
+
+    <owl:Class rdf:about="&version15;Apple_Operating_Systems">
+        <rdfs:subClassOf rdf:resource="&version15;Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Apple_Serial_Number_Identifier -->
+
+    <owl:Class rdf:about="&version15;Apple_Serial_Number_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Device_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Apple_UDID_Identifier -->
+
+    <owl:Class rdf:about="&version15;Apple_UDID_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Device_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artefact_Location -->
+
+    <owl:Class rdf:about="&version15;Artefact_Location">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&version15;hasProvenanceReference"/>
+                <owl:someValuesFrom rdf:resource="&version15;Artefact_Reference"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&version15;isArtefactType"/>
+                <owl:someValuesFrom rdf:resource="&version15;Artefact_Type_Identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&version15;Artefact_Reference"/>
+        <owl:disjointWith rdf:resource="&version15;Artefact_Type_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artefact_Reference -->
+
+    <owl:Class rdf:about="&version15;Artefact_Reference">
+        <owl:disjointWith rdf:resource="&version15;Artefact_Type_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artefact_Type_Identifier -->
+
+    <owl:Class rdf:about="&version15;Artefact_Type_Identifier">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&version15;isLocatedAt"/>
+                <owl:someValuesFrom rdf:resource="&version15;Artefact_Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Bluetooth_Network_Card -->
+
+    <owl:Class rdf:about="&version15;Bluetooth_Network_Card">
+        <rdfs:subClassOf rdf:resource="&version15;Network_Card"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Books -->
+
+    <owl:Class rdf:about="&version15;Books">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Country_Codes -->
+
+    <owl:Class rdf:about="&version15;Country_Codes">
+        <rdfs:subClassOf rdf:resource="&version15;Address_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_0477c1e3_2f03_4011_b8d4_21a085396f7a -->
+
+    <owl:Class rdf:about="&version15;DESO_0477c1e3_2f03_4011_b8d4_21a085396f7a">
+        <rdfs:label>Components</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_1b7077c0_73d5_4a6f_95de_018420afbe7f"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_070df42c_f0b7_488b_9f39_8683419ef6df -->
+
+    <owl:Class rdf:about="&version15;DESO_070df42c_f0b7_488b_9f39_8683419ef6df">
+        <rdfs:label>Fixed_SD_Card</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_1b7077c0_73d5_4a6f_95de_018420afbe7f"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_1b7077c0_73d5_4a6f_95de_018420afbe7f -->
+
+    <owl:Class rdf:about="&version15;DESO_1b7077c0_73d5_4a6f_95de_018420afbe7f">
+        <rdfs:label>Phantom_3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_825a2b57_e8f1_46b8_8b58_e28ae4748c26"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_27fcb8f4_664b_4750_aae2_ebed74d8193d -->
+
+    <owl:Class rdf:about="&version15;DESO_27fcb8f4_664b_4750_aae2_ebed74d8193d">
+        <rdfs:label>Battery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_7bf6e8a2_baab_4932_b385_e2edfcb58a98"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_3976671f_8f1b_4248_9029_b14c06b5a19f -->
+
+    <owl:Class rdf:about="&version15;DESO_3976671f_8f1b_4248_9029_b14c06b5a19f">
+        <rdfs:label>Aircraft_eMMC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_1b7077c0_73d5_4a6f_95de_018420afbe7f"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_3d818662_90aa_44c7_b785_356a0fa0ceb4 -->
+
+    <owl:Class rdf:about="&version15;DESO_3d818662_90aa_44c7_b785_356a0fa0ceb4">
+        <rdfs:label>Removable_SD_Card</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_e81ba0b1_8a60_4454_9379_c40fd4249e71"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_7bf6e8a2_baab_4932_b385_e2edfcb58a98 -->
+
+    <owl:Class rdf:about="&version15;DESO_7bf6e8a2_baab_4932_b385_e2edfcb58a98">
+        <rdfs:label>Components</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_e81ba0b1_8a60_4454_9379_c40fd4249e71"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_82380780_d687_47c5_97ae_813873b3b756 -->
+
+    <owl:Class rdf:about="&version15;DESO_82380780_d687_47c5_97ae_813873b3b756">
+        <rdfs:label>Fixed_SD_card</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_e81ba0b1_8a60_4454_9379_c40fd4249e71"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_825a2b57_e8f1_46b8_8b58_e28ae4748c26 -->
+
+    <owl:Class rdf:about="&version15;DESO_825a2b57_e8f1_46b8_8b58_e28ae4748c26">
+        <rdfs:label>DJI</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_84ba4b78_37c8_4548_a4c0_37e0a82e31b5"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_84ba4b78_37c8_4548_a4c0_37e0a82e31b5 -->
+
+    <owl:Class rdf:about="&version15;DESO_84ba4b78_37c8_4548_a4c0_37e0a82e31b5">
+        <rdfs:label>Drone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_af807580_5dc5_4cf6_bb73_594ee5c0b170 -->
+
+    <owl:Class rdf:about="&version15;DESO_af807580_5dc5_4cf6_bb73_594ee5c0b170">
+        <rdfs:label>Aircraft_eMMC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_e81ba0b1_8a60_4454_9379_c40fd4249e71"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_bb294df8_e367_4814_b80e_f48f01b72bfc -->
+
+    <owl:Class rdf:about="&version15;DESO_bb294df8_e367_4814_b80e_f48f01b72bfc">
+        <rdfs:label>Removable_SD_Card</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_1b7077c0_73d5_4a6f_95de_018420afbe7f"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_d44fbf66_c2b1_42c0_a285_0fdcc11e5f9a -->
+
+    <owl:Class rdf:about="&version15;DESO_d44fbf66_c2b1_42c0_a285_0fdcc11e5f9a">
+        <rdfs:label>Battery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_0477c1e3_2f03_4011_b8d4_21a085396f7a"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DESO_e81ba0b1_8a60_4454_9379_c40fd4249e71 -->
+
+    <owl:Class rdf:about="&version15;DESO_e81ba0b1_8a60_4454_9379_c40fd4249e71">
+        <rdfs:label>Phantom_4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&version15;DESO_825a2b57_e8f1_46b8_8b58_e28ae4748c26"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#DeveloperPages -->
+
+    <owl:Class rdf:about="&version15;DeveloperPages">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Device_Identifier -->
+
+    <owl:Class rdf:about="&version15;Device_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;What"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Devices -->
+
+    <owl:Class rdf:about="&version15;Devices">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Location"/>
+        <owl:disjointWith rdf:resource="&version15;File_Systems"/>
+        <owl:disjointWith rdf:resource="&version15;OS_Dependent_Files"/>
+        <owl:disjointWith rdf:resource="&version15;OS_Independent_Files"/>
+        <owl:disjointWith rdf:resource="&version15;Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Documentary -->
+
+    <owl:Class rdf:about="&version15;Documentary">
+        <rdfs:subClassOf rdf:resource="&version15;OS_Independent_Files"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ethernet_Network_Card -->
+
+    <owl:Class rdf:about="&version15;Ethernet_Network_Card">
+        <rdfs:subClassOf rdf:resource="&version15;Network_Card"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#FAT -->
+
+    <owl:Class rdf:about="&version15;FAT">
+        <rdfs:subClassOf rdf:resource="&version15;File_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#FAT16 -->
+
+    <owl:Class rdf:about="&version15;FAT16">
+        <rdfs:subClassOf rdf:resource="&version15;FAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#FAT32 -->
+
+    <owl:Class rdf:about="&version15;FAT32">
+        <rdfs:subClassOf rdf:resource="&version15;FAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#File_System_Identifier -->
+
+    <owl:Class rdf:about="&version15;File_System_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Logical_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#File_Systems -->
+
+    <owl:Class rdf:about="&version15;File_Systems">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Location"/>
+        <owl:disjointWith rdf:resource="&version15;OS_Dependent_Files"/>
+        <owl:disjointWith rdf:resource="&version15;OS_Independent_Files"/>
+        <owl:disjointWith rdf:resource="&version15;Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Geo_Coordinates -->
+
+    <owl:Class rdf:about="&version15;Geo_Coordinates">
+        <rdfs:subClassOf rdf:resource="&version15;Physical_Location_Identifier"/>
+        <rdfs:comment>These are WGS84 Geo coordinates from http://www.w3.org/2003/01/geo/wgs84_pos</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Graphics -->
+
+    <owl:Class rdf:about="&version15;Graphics">
+        <rdfs:subClassOf rdf:resource="&version15;OS_Independent_Files"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#HFS -->
+
+    <owl:Class rdf:about="&version15;HFS">
+        <rdfs:subClassOf rdf:resource="&version15;File_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#HFS+ -->
+
+    <owl:Class rdf:about="&version15;HFS+">
+        <rdfs:subClassOf rdf:resource="&version15;HFS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#HFSX -->
+
+    <owl:Class rdf:about="&version15;HFSX">
+        <rdfs:subClassOf rdf:resource="&version15;HFS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Hard_Disk -->
+
+    <owl:Class rdf:about="&version15;Hard_Disk">
+        <rdfs:subClassOf rdf:resource="&version15;Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Hard_Disk_Drive_Identifier -->
+
+    <owl:Class rdf:about="&version15;Hard_Disk_Drive_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Device_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#IOS_6 -->
+
+    <owl:Class rdf:about="&version15;IOS_6">
+        <rdfs:subClassOf rdf:resource="&version15;iOS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#IP_Address_Identifier -->
+
+    <owl:Class rdf:about="&version15;IP_Address_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Logical_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Journals -->
+
+    <owl:Class rdf:about="&version15;Journals">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Jpeg -->
+
+    <owl:Class rdf:about="&version15;Jpeg">
+        <rdfs:subClassOf rdf:resource="&version15;Graphics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Logical_Identifier -->
+
+    <owl:Class rdf:about="&version15;Logical_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;What"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Mobile_Phone -->
+
+    <owl:Class rdf:about="&version15;Mobile_Phone">
+        <rdfs:subClassOf rdf:resource="&version15;Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Mobile_Phone_Handset_Identifier -->
+
+    <owl:Class rdf:about="&version15;Mobile_Phone_Handset_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Device_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#NTFS -->
+
+    <owl:Class rdf:about="&version15;NTFS">
+        <rdfs:subClassOf rdf:resource="&version15;File_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Network_Address_Identifier -->
+
+    <owl:Class rdf:about="&version15;Network_Address_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Device_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Network_Card -->
+
+    <owl:Class rdf:about="&version15;Network_Card">
+        <rdfs:subClassOf rdf:resource="&version15;Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_Dependent_Files -->
+
+    <owl:Class rdf:about="&version15;OS_Dependent_Files">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Location"/>
+        <owl:disjointWith rdf:resource="&version15;OS_Independent_Files"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_Independent_Files -->
+
+    <owl:Class rdf:about="&version15;OS_Independent_Files">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Location"/>
+        <owl:disjointWith rdf:resource="&version15;Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_1 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_1">
+        <rdfs:subClassOf rdf:resource="&version15;Apple_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_2 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_2">
+        <rdfs:subClassOf rdf:resource="&version15;Apple_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_3 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_3">
+        <rdfs:subClassOf rdf:resource="&version15;Apple_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_4 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_4">
+        <rdfs:subClassOf rdf:resource="&version15;Apple_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_5 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_5">
+        <rdfs:subClassOf rdf:resource="&version15;Apple_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_6 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_6">
+        <rdfs:subClassOf rdf:resource="&version15;Apple_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_6_1 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_6_1">
+        <rdfs:subClassOf rdf:resource="&version15;OS_X_10_6"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_6_2 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_6_2">
+        <rdfs:subClassOf rdf:resource="&version15;OS_X_10_6"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_6_3 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_6_3">
+        <rdfs:subClassOf rdf:resource="&version15;OS_X_10_6"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_6_4 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_6_4">
+        <rdfs:subClassOf rdf:resource="&version15;OS_X_10_6"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_6_5 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_6_5">
+        <rdfs:subClassOf rdf:resource="&version15;OS_X_10_6"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_6_6 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_6_6">
+        <rdfs:subClassOf rdf:resource="&version15;OS_X_10_6"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_6_7 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_6_7">
+        <rdfs:subClassOf rdf:resource="&version15;OS_X_10_6"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_6_8 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_6_8">
+        <rdfs:subClassOf rdf:resource="&version15;OS_X_10_6"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_6_9 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_6_9">
+        <rdfs:subClassOf rdf:resource="&version15;OS_X_10_6"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_7 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_7">
+        <rdfs:subClassOf rdf:resource="&version15;Apple_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_8 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_8">
+        <rdfs:subClassOf rdf:resource="&version15;Apple_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#OS_X_10_9 -->
+
+    <owl:Class rdf:about="&version15;OS_X_10_9">
+        <rdfs:subClassOf rdf:resource="&version15;Apple_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Online_account -->
+
+    <owl:Class rdf:about="&version15;Online_account">
+        <rdfs:subClassOf rdf:resource="&version15;Who"/>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_OnlineAccount</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Operating_Systems -->
+
+    <owl:Class rdf:about="&version15;Operating_Systems">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Organization -->
+
+    <owl:Class rdf:about="&version15;Organization">
+        <rdfs:subClassOf rdf:resource="&version15;Who"/>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_Organization</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#PDF -->
+
+    <owl:Class rdf:about="&version15;PDF">
+        <rdfs:subClassOf rdf:resource="&version15;Documentary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Person -->
+
+    <owl:Class rdf:about="&version15;Person">
+        <rdfs:subClassOf rdf:resource="&version15;Who"/>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_Person</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Physical_Location_Identifier -->
+
+    <owl:Class rdf:about="&version15;Physical_Location_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Where"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Post_Codes -->
+
+    <owl:Class rdf:about="&version15;Post_Codes">
+        <rdfs:subClassOf rdf:resource="&version15;Address_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#SIM_Card -->
+
+    <owl:Class rdf:about="&version15;SIM_Card">
+        <rdfs:subClassOf rdf:resource="&version15;Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#SIM_Identifier -->
+
+    <owl:Class rdf:about="&version15;SIM_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Device_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#SSID_Identifier -->
+
+    <owl:Class rdf:about="&version15;SSID_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Logical_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#UK_Post_Codes -->
+
+    <owl:Class rdf:about="&version15;UK_Post_Codes">
+        <rdfs:subClassOf rdf:resource="&version15;Post_Codes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#USB_Device -->
+
+    <owl:Class rdf:about="&version15;USB_Device">
+        <rdfs:subClassOf rdf:resource="&version15;Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#USB_Device_Identifier -->
+
+    <owl:Class rdf:about="&version15;USB_Device_Identifier">
+        <rdfs:subClassOf rdf:resource="&version15;Device_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#WebEntry -->
+
+    <owl:Class rdf:about="&version15;WebEntry">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Reference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#What -->
+
+    <owl:Class rdf:about="&version15;What">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Type_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#What_timestamps -->
+
+    <owl:Class rdf:about="&version15;What_timestamps">
+        <rdfs:subClassOf rdf:resource="&version15;When"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#When -->
+
+    <owl:Class rdf:about="&version15;When">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Type_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Where -->
+
+    <owl:Class rdf:about="&version15;Where">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Type_Identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Where_timestamps -->
+
+    <owl:Class rdf:about="&version15;Where_timestamps">
+        <rdfs:subClassOf rdf:resource="&version15;When"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Who -->
+
+    <owl:Class rdf:about="&version15;Who">
+        <rdfs:subClassOf rdf:resource="&version15;Artefact_Type_Identifier"/>
+        <rdfs:comment>These terms are taken from http://xmlns.com/foaf/spec/</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Who_timestamps -->
+
+    <owl:Class rdf:about="&version15;Who_timestamps">
+        <rdfs:subClassOf rdf:resource="&version15;When"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Windows_7 -->
+
+    <owl:Class rdf:about="&version15;Windows_7">
+        <rdfs:subClassOf rdf:resource="&version15;Windows_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Windows_7_SP1 -->
+
+    <owl:Class rdf:about="&version15;Windows_7_SP1">
+        <rdfs:subClassOf rdf:resource="&version15;Windows_7"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Windows_7_SP2 -->
+
+    <owl:Class rdf:about="&version15;Windows_7_SP2">
+        <rdfs:subClassOf rdf:resource="&version15;Windows_7"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Windows_Operating_Systems -->
+
+    <owl:Class rdf:about="&version15;Windows_Operating_Systems">
+        <rdfs:subClassOf rdf:resource="&version15;Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Windows_Vista -->
+
+    <owl:Class rdf:about="&version15;Windows_Vista">
+        <rdfs:subClassOf rdf:resource="&version15;Windows_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Windows_XP -->
+
+    <owl:Class rdf:about="&version15;Windows_XP">
+        <rdfs:subClassOf rdf:resource="&version15;Windows_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Windows_XP_SP1 -->
+
+    <owl:Class rdf:about="&version15;Windows_XP_SP1">
+        <rdfs:subClassOf rdf:resource="&version15;Windows_XP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Windows_XP_SP2 -->
+
+    <owl:Class rdf:about="&version15;Windows_XP_SP2">
+        <rdfs:subClassOf rdf:resource="&version15;Windows_XP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Windows_XP_SP3 -->
+
+    <owl:Class rdf:about="&version15;Windows_XP_SP3">
+        <rdfs:subClassOf rdf:resource="&version15;Windows_XP"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Wireless_Access_Point -->
+
+    <owl:Class rdf:about="&version15;Wireless_Access_Point">
+        <rdfs:subClassOf rdf:resource="&version15;Devices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Wireless_Network_Card -->
+
+    <owl:Class rdf:about="&version15;Wireless_Network_Card">
+        <rdfs:subClassOf rdf:resource="&version15;Network_Card"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#exFAT -->
+
+    <owl:Class rdf:about="&version15;exFAT">
+        <rdfs:subClassOf rdf:resource="&version15;FAT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#iOS -->
+
+    <owl:Class rdf:about="&version15;iOS">
+        <rdfs:subClassOf rdf:resource="&version15;Apple_Operating_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#iOS_5 -->
+
+    <owl:Class rdf:about="&version15;iOS_5">
+        <rdfs:subClassOf rdf:resource="&version15;iOS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#iOS_6_1 -->
+
+    <owl:Class rdf:about="&version15;iOS_6_1">
+        <rdfs:subClassOf rdf:resource="&version15;IOS_6"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#iOS_9 -->
+
+    <owl:Class rdf:about="&version15;iOS_9">
+        <rdfs:subClassOf rdf:resource="&version15;iOS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#iOS_9_2 -->
+
+    <owl:Class rdf:about="&version15;iOS_9_2">
+        <rdfs:subClassOf rdf:resource="&version15;iOS_9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#iOS_9_2_1 -->
+
+    <owl:Class rdf:about="&version15;iOS_9_2_1">
+        <rdfs:subClassOf rdf:resource="&version15;iOS_9_2"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.ordnancesurvey.co.uk/ontology/postcode/PostcodeArea -->
+
+    <owl:NamedIndividual rdf:about="&postcode;PostcodeArea">
+        <rdf:type rdf:resource="&version15;UK_Post_Codes"/>
+        <rdfs:comment>An area given a unique alphabetic coding by Royal Mail to facilitate the delivering of mail. The area is identified by one or two alpha characters at the start of the full postcode, the letters being derived from a town, city or district falling within the postcode area. There are, at present, 120 postcode areas in Great Britain, for example, SO for Southampton, MK for Milton Keynes, B for Birmingham or W for London West. The postcode area code constitutes the first part of the outward code.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.ordnancesurvey.co.uk/ontology/postcode/PostcodeDistrict -->
+
+    <owl:NamedIndividual rdf:about="&postcode;PostcodeDistrict">
+        <rdf:type rdf:resource="&version15;UK_Post_Codes"/>
+        <rdfs:comment>A sub-area of the postcode area, specified by the character sub-string within the first half of a full postcode, which may be numeric, alphabetic or alphanumeric; for example, 42 from MK42 6GH or 1A from W1A 4WW. There are approximately 2 800 postcode districts in Great Britain.
+NOTE: there are certain non-geographic districts. In these instances, a district code is allocated to cover all large users in the postcode area.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.ordnancesurvey.co.uk/ontology/postcode/PostcodeSector -->
+
+    <owl:NamedIndividual rdf:about="&postcode;PostcodeSector">
+        <rdf:type rdf:resource="&version15;UK_Post_Codes"/>
+        <rdfs:comment>A sub-area of a postcode district, whose area is identified by the number third from the end of a full postcode. There are approximately 9000 postcode sectors in Great Britain. An example of a postcode sector code is 3, from GU12 3DH.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.ordnancesurvey.co.uk/ontology/postcode/PostcodeUnit -->
+
+    <owl:NamedIndividual rdf:about="&postcode;PostcodeUnit">
+        <rdf:type rdf:resource="&version15;UK_Post_Codes"/>
+        <rdfs:comment>An area covered by a particular postcode. Postcodes are an alphanumeric abbreviated form of address. Postcode units are unique references and identify an average of 15 addresses. In some cases, where an address receives a substantial amount of mail, a postcode will apply to only one address (a large-user postcode). The maximum number of addresses in a postcode is 100.
+
+A sub-area of a postcode sector, indicated by the two letters of the inward postcode, which identifies one or more small-user postcode delivery points or an individual large-user postcode. There are approximately 1.7 million postcode units in the UK.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000001 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000001">
+        <rdf:type rdf:resource="&version15;Apple_Device"/>
+        <rdfs:label xml:lang="en">Apple_Serial_Number</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-02-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasFirmwareCommand>The serial number is presented in the property IOPlatformSerialNumber of the IOPlatformExpertDevice node in the I/O Registry. The I/O Registry accessor APIs in IOKit.framework can be used to retrieve this property from an application.</version15:hasFirmwareCommand>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000001"/>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000002"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000002 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000002">
+        <rdf:type rdf:resource="&version15;Hard_Disk"/>
+        <rdfs:label xml:lang="en">Hard_Disk_Manufacturer</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-02-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasFirmwareCommand>Use IDENTIFY DEVICE.</version15:hasFirmwareCommand>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000011"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000003 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000003">
+        <rdf:type rdf:resource="&version15;Hard_Disk"/>
+        <rdfs:label xml:lang="en">Hard_Disk_Model</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-02-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasFirmwareCommand>Use IDENTIFY DEVICE</version15:hasFirmwareCommand>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000011"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000004 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000004">
+        <rdf:type rdf:resource="&version15;Hard_Disk"/>
+        <rdfs:label xml:lang="en">Hard_Disk_Serial_Number</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-02-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasFirmwareCommand>Use IDENTIFY DEVICE</version15:hasFirmwareCommand>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000011"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000005 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000005">
+        <rdf:type rdf:resource="&version15;Mobile_Phone"/>
+        <rdfs:label xml:lang="en">Handset_IMEI</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-02-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasFirmwareCommand>Use *#06# on keypad or specific to handset</version15:hasFirmwareCommand>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000003"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000005"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000006 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000006">
+        <rdf:type rdf:resource="&version15;Bluetooth_Network_Card"/>
+        <rdfs:label rdf:datatype="&xsd;string">Bluetooth_MAC_Address</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-02-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasFirmwareCommand>Dependent on manufacturer</version15:hasFirmwareCommand>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000004"/>
+        <version15:hasSupportingReference rdf:resource="&version15;Ref_000005"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000006"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000007 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000007">
+        <rdf:type rdf:resource="&version15;Ethernet_Network_Card"/>
+        <rdfs:label xml:lang="en">Ethernet_MAC_Address</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-02-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasFirmwareCommand>Dependent on manufacturer</version15:hasFirmwareCommand>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000004"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000006"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000008 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000008">
+        <rdf:type rdf:resource="&version15;Wireless_Network_Card"/>
+        <rdfs:label xml:lang="en">Network_Mac_Address</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasFirmwareCommand>Dependent on manufacturer</version15:hasFirmwareCommand>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasSupportingReference rdf:resource="&version15;Ref_000004"/>
+        <version15:hasSupportingReference rdf:resource="&version15;Ref_000006"/>
+        <version15:hasSupportingReference rdf:resource="&version15;Ref_000007"/>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000008"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000006"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000009 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000009">
+        <rdf:type rdf:resource="&version15;Wireless_Network_Card"/>
+        <rdfs:label xml:lang="en">SSID</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasFirmwareCommand>Dependent on manufacturer</version15:hasFirmwareCommand>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000008"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000017"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000010 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000010">
+        <rdf:type rdf:resource="&version15;SIM_Card"/>
+        <rdfs:label xml:lang="en">SIM_Card_ICCID</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-01T09:00:00</version15:dateAddedToDESO>
+        <rdfs:comment rdf:datatype="&xsd;string">Integrated Circuit Card Identifier</rdfs:comment>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasFirmwareCommand>Modem command: AT!ICCID?</version15:hasFirmwareCommand>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000009"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000010"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000011 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000011">
+        <rdf:type rdf:resource="&version15;SIM_Card"/>
+        <rdfs:label xml:lang="en">SIM_Card_IMSI</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-01T09:00:00</version15:dateAddedToDESO>
+        <rdfs:comment rdf:datatype="&xsd;string">International Mobile Subscriber Identity</rdfs:comment>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000012"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000008"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000012 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000012">
+        <rdf:type rdf:resource="&version15;USB_Device"/>
+        <rdfs:label xml:lang="en">USB_Device_Manufacturer</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000013"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000013 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000013">
+        <rdf:type rdf:resource="&version15;USB_Device"/>
+        <rdfs:label xml:lang="en">USB_Device_Model</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000013"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000010"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000014 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000014">
+        <rdf:type rdf:resource="&version15;USB_Device"/>
+        <rdfs:label xml:lang="en">USB_Device_Serial_Number</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000013"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000011"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000015 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000015">
+        <rdf:type rdf:resource="&version15;exFAT"/>
+        <rdfs:label xml:lang="en">Volume_Serial_Number</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-01T09:00:00</version15:dateAddedToDESO>
+        <version15:byteOffsetDeviceFirstSector rdf:datatype="&xsd;hexBinary">64</version15:byteOffsetDeviceFirstSector>
+        <version15:hasParsableStructure>true</version15:hasParsableStructure>
+        <version15:hasProvCodeAuthStatNonPeerReviewedNotSupported rdf:resource="&version15;Ref_000014"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000016 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000016">
+        <rdf:type rdf:resource="&version15;exFAT"/>
+        <rdfs:label xml:lang="en">Volume_Label</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>true</version15:hasParsableStructure>
+        <version15:isDirectoryEntry>[DESO_ORDER_1]Primary entry in Root Directory. Identifed by  0x83 or 0x03 as first byte (0x03 means no label). 
+Second byte is entry length.</version15:isDirectoryEntry>
+        <version15:hasProvCodeAuthStatNonPeerReviewedNotSupported rdf:resource="&version15;Ref_000018"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000017 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000017">
+        <rdf:type rdf:resource="&version15;FAT16"/>
+        <rdfs:label xml:lang="en">Volume_Label</rdfs:label>
+        <version15:byteOffsetVolumeFirstSector rdf:datatype="&xsd;hexBinary">0x2B</version15:byteOffsetVolumeFirstSector>
+        <version15:entryLength rdf:datatype="&xsd;decimal">11</version15:entryLength>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-01T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>true</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000020"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000018 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000018">
+        <rdf:type rdf:resource="&version15;FAT16"/>
+        <rdfs:label xml:lang="en">Volume_Serial_Number</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-01T09:00:00</version15:dateAddedToDESO>
+        <version15:byteOffsetVolumeFirstSector rdf:datatype="&xsd;hexBinary">27</version15:byteOffsetVolumeFirstSector>
+        <version15:entryLength rdf:datatype="&xsd;decimal">4</version15:entryLength>
+        <rdfs:comment>Note length is DWORD</rdfs:comment>
+        <version15:hasParsableStructure>true</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000020"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000019 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000019">
+        <rdf:type rdf:resource="&version15;FAT32"/>
+        <rdfs:label xml:lang="en">Volume_Label</rdfs:label>
+        <version15:entryLength rdf:datatype="&xsd;decimal">11</version15:entryLength>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-15T09:00:00</version15:dateAddedToDESO>
+        <version15:byteOffsetVolumeFirstSector rdf:datatype="&xsd;hexBinary">47</version15:byteOffsetVolumeFirstSector>
+        <version15:hasParsableStructure>true</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000020"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000013"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000020 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000020">
+        <rdf:type rdf:resource="&version15;FAT32"/>
+        <rdfs:label xml:lang="en">Volume_Serial_Number</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-15T09:00:00</version15:dateAddedToDESO>
+        <version15:entryLength rdf:datatype="&xsd;decimal">4</version15:entryLength>
+        <version15:byteOffsetVolumeFirstSector rdf:datatype="&xsd;hexBinary">43</version15:byteOffsetVolumeFirstSector>
+        <version15:hasParsableStructure>true</version15:hasParsableStructure>
+        <rdfs:comment>Length is DWORD</rdfs:comment>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000020"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000021 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000021">
+        <rdf:type rdf:resource="&version15;NTFS"/>
+        <rdfs:label xml:lang="en">NTFS_ObjectID</rdfs:label>
+        <version15:entryLength rdf:datatype="&xsd;decimal">16</version15:entryLength>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-15T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000022 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000022">
+        <rdf:type rdf:resource="&version15;Windows_7"/>
+        <rdfs:label xml:lang="en">Windows_7_Software_Registry_EMDMgmt_USB_Serial_Number</rdfs:label>
+        <version15:hasFieldSeparator rdf:datatype="&xsd;string">#</version15:hasFieldSeparator>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-15T09:00:00</version15:dateAddedToDESO>
+        <version15:hasFieldNumber rdf:datatype="&xsd;decimal">3</version15:hasFieldNumber>
+        <version15:hasWindowsRegistryPath>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\EMDMgmt</version15:hasWindowsRegistryPath>
+        <version15:hasParsableStructure>true</version15:hasParsableStructure>
+        <version15:hasNonUserIdentifiableFilePath>\Windows\System32\config\SOFTWARE</version15:hasNonUserIdentifiableFilePath>
+        <version15:hasProvCodeAuthStatNonPeerReviewedNotSupported rdf:resource="&version15;Ref_000015"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000011"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000023 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000023">
+        <rdf:type rdf:resource="&version15;OS_X_10_6_5"/>
+        <rdf:type rdf:resource="&version15;OS_X_10_6_6"/>
+        <rdf:type rdf:resource="&version15;OS_X_10_6_7"/>
+        <rdf:type rdf:resource="&version15;OS_X_10_6_8"/>
+        <rdf:type rdf:resource="&version15;OS_X_10_6_9"/>
+        <rdf:type rdf:resource="&version15;OS_X_10_7"/>
+        <rdfs:label xml:lang="en">OS_X_kernal_USB_Serial_Number</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-15T09:00:00</version15:dateAddedToDESO>
+        <version15:hasNonUserIdentifiableFilePath>/private/var/log/kernal.log</version15:hasNonUserIdentifiableFilePath>
+        <version15:prefix>USBMSC Identifier (non-unique) :</version15:prefix>
+        <version15:hasParsableStructure>true</version15:hasParsableStructure>
+        <version15:entryLength>14</version15:entryLength>
+        <version15:hasProvCodeAuthStatNonPeerReviewedNotSupported rdf:resource="&version15;Ref_000017"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000011"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000024 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000024">
+        <rdf:type rdf:resource="&version15;Apple_Mobile_Device"/>
+        <rdfs:label rdf:datatype="&xsd;string">Apple_UDID</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-03-15T09:00:00</version15:dateAddedToDESO>
+        <version15:hasParsableStructure>false</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000016"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000025 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000025">
+        <rdf:type rdf:resource="&version15;NTFS"/>
+        <rdfs:label>NTFS Volume Serial Number</rdfs:label>
+        <version15:entryLength rdf:datatype="&xsd;decimal">16</version15:entryLength>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2014-05-11T09:00:00</version15:dateAddedToDESO>
+        <version15:byteOffsetVolumeFirstSector rdf:datatype="&xsd;hexBinary">48</version15:byteOffsetVolumeFirstSector>
+        <version15:hasParsableStructure>true</version15:hasParsableStructure>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000020"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000026 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000026">
+        <rdf:type rdf:resource="&version15;Wireless_Access_Point"/>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2016-03-06T09:00:00</version15:dateAddedToDESO>
+        <rdfs:comment>Issued IP Addresses</rdfs:comment>
+        <version15:hasProvCodeNoEvidenceAvailable rdf:resource="&version15;Type_000006"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000015"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000027 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000027">
+        <rdf:type rdf:resource="&version15;Wireless_Access_Point"/>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2016-03-06T09:00:00</version15:dateAddedToDESO>
+        <rdfs:comment>Captured Customer MAC Addresses</rdfs:comment>
+        <version15:isArtefactType rdf:resource="&version15;Type_000006"/>
+        <version15:hasProvCodeNoEvidenceAvailable rdf:resource="&version15;Type_000006"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000028 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000028">
+        <rdf:type rdf:resource="&version15;iOS_9_2_1"/>
+        <rdfs:label>iOS_Geobookmarks_lat</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2016-03-06T09:00:00</version15:dateAddedToDESO>
+        <version15:hasPlistPath></version15:hasPlistPath>
+        <version15:hasNonUserIdentifiableFilePath>/mobile/Applications/com.apple.Maps/Library/Maps/GeoBookmarks.plist</version15:hasNonUserIdentifiableFilePath>
+        <version15:isArtefactType rdf:resource="&geo;lat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000029 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000029">
+        <rdf:type rdf:resource="&version15;iOS_9_2_1"/>
+        <rdfs:label>iOS_Geobookmarks_long</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2016-03-06T09:00:00</version15:dateAddedToDESO>
+        <version15:hasNonUserIdentifiableFilePath>/mobile/Applications/com.apple.Maps/Library/Maps/GeoBookmarks.plist</version15:hasNonUserIdentifiableFilePath>
+        <version15:hasPlistPath></version15:hasPlistPath>
+        <version15:isArtefactType rdf:resource="&geo;long"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000030 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000030">
+        <rdf:type rdf:resource="&version15;iOS_9_2_1"/>
+        <rdfs:label>iOS_plist_known_wifi_networks</rdfs:label>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2016-03-06T09:00:00</version15:dateAddedToDESO>
+        <version15:hasPlistPath></version15:hasPlistPath>
+        <version15:hasNonUserIdentifiableFilePath>/preferences/SystemConfiguration/com.apple.wifi.plist</version15:hasNonUserIdentifiableFilePath>
+        <version15:hasProvCodeNoEvidenceAvailable rdf:resource="&version15;Artfct_000030"/>
+        <version15:isArtefactType rdf:resource="&version15;Type_000017"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Artfct_000031 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Artfct_000031">
+        <rdf:type rdf:resource="&version15;Windows_7"/>
+        <rdf:type rdf:resource="&version15;Windows_Vista"/>
+        <rdfs:label rdf:datatype="&xsd;string">Link File Volume Serial Number</rdfs:label>
+        <version15:hasUserIdentifiableFilePath rdf:datatype="&xsd;anyURI">%USERPROFILE\Appdata\Roaming\Microsoft\Windows\Recent</version15:hasUserIdentifiableFilePath>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2017-06-01T09:00:00</version15:dateAddedToDESO>
+        <version15:entryFormat rdf:datatype="&xsd;byte">4</version15:entryFormat>
+        <version15:hasLinkFileLocation rdf:datatype="&xsd;anyURI">\LINKINFO\VolumeID\DriveSerialNumber</version15:hasLinkFileLocation>
+        <version15:hasUserIdentifiableFilePath rdf:datatype="&xsd;boolean">true</version15:hasUserIdentifiableFilePath>
+        <version15:hasParsableStructure rdf:datatype="&xsd;boolean">true</version15:hasParsableStructure>
+        <version15:isArtefactType rdf:resource="&version15;Type_000014"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000001 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000001">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <dc:date rdf:datatype="&xsd;string">2011-07-18</dc:date>
+        <dc:author rdf:datatype="&xsd;string">Apple</dc:author>
+        <prism:organization rdf:datatype="&xsd;string">Apple</prism:organization>
+        <dc:title rdf:datatype="&xsd;string">Technical Note TN1103
+Uniquely Identifying a Macintosh Computer</dc:title>
+        <prism:url rdf:datatype="&xsd;anyURI">https://developer.apple.com/library/mac/technotes/tn1103/_index.html</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000002 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000002">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <prism:organization rdf:datatype="&xsd;string">Apple</prism:organization>
+        <dc:author rdf:datatype="&xsd;string">Apple</dc:author>
+        <prism:url rdf:datatype="&xsd;anyURI">http://support.apple.com/kb/ht4061</prism:url>
+        <dc:title rdf:datatype="&xsd;string">iOS: How to find the serial number, IMEI, MEID, CDN, and ICCID number</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000003 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000003">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <rdfs:label rdf:datatype="&xsd;string">GSM standards body referencing IMEI</rdfs:label>
+        <dc:author rdf:datatype="&xsd;string">GSM Association</dc:author>
+        <prism:url>http://www.gsma.com/technicalprojects/fraud-security/device-imei</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000004 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000004">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <rdfs:label rdf:datatype="&xsd;string">802 Standard</rdfs:label>
+        <dc:date rdf:datatype="&xsd;string">2002-02-07</dc:date>
+        <prism:organization rdf:datatype="&xsd;string">IEEE</prism:organization>
+        <dc:author rdf:datatype="&xsd;string">IEEE</dc:author>
+        <prism:url rdf:datatype="&xsd;anyURI">http://standards.ieee.org/getieee802/download/802-2001.pdf</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000005 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000005">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <rdfs:label rdf:datatype="&xsd;string">Document explaining Bluetooth standards</rdfs:label>
+        <dc:date rdf:datatype="&xsd;string">2013-04-16</dc:date>
+        <prism:organization rdf:datatype="&xsd;string">Bluetooth Special Interest Group</prism:organization>
+        <dc:author rdf:datatype="&xsd;string">Bluetooth Special Interest Group</dc:author>
+        <prism:url rdf:datatype="&xsd;anyURI">https://www.bluetooth.org/zh-cn/Documents/BW13_DayOne_Session1_BluetoothBasics.pdf</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000006 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000006">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <prism:organization rdf:datatype="&xsd;string">IEEE</prism:organization>
+        <dc:author rdf:datatype="&xsd;string">IEEE</dc:author>
+        <rdfs:comment rdf:datatype="&xsd;string">IEEE 802 Registration Authority FAQ</rdfs:comment>
+        <prism:url rdf:datatype="&xsd;anyURI">http://standards.ieee.org/faqs/regauth.html#2</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000007 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000007">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <prism:organization rdf:datatype="&xsd;string">IEEE</prism:organization>
+        <dc:author rdf:datatype="&xsd;string">IEEE</dc:author>
+        <dc:title rdf:datatype="&xsd;string">IEEE 802.11: Wireless LANs</dc:title>
+        <prism:url rdf:datatype="&xsd;anyURI">http://standards.ieee.org/about/get/802/802.11.html</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000008 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000008">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <dc:date rdf:datatype="&xsd;string">2012-3-29</dc:date>
+        <prism:organization rdf:datatype="&xsd;string">IEEE</prism:organization>
+        <dc:author rdf:datatype="&xsd;string">IEEE</dc:author>
+        <rdfs:comment rdf:datatype="&xsd;string">IEEE Standard for Information technology—Telecommunications and information exchange between systems
+Local and metropolitan area networks — Specific requirements</rdfs:comment>
+        <dc:title rdf:datatype="&xsd;string">Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications</dc:title>
+        <prism:url rdf:datatype="&xsd;anyURI">http://standards.ieee.org/getieee802/download/802-2001.pdf</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000009 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000009">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <dc:date rdf:datatype="&xsd;string">2013-09-20</dc:date>
+        <prism:organization rdf:datatype="&xsd;string">GSM Association</prism:organization>
+        <dc:author rdf:datatype="&xsd;string">GSM Association</dc:author>
+        <rdfs:comment rdf:datatype="&xsd;string">GSM Association documentation describing ICCID</rdfs:comment>
+        <dc:title rdf:datatype="&xsd;string">Mobile Network Codes and Names Guidelines and Application Form 
+Version 1.0</dc:title>
+        <prism:url rdf:datatype="&xsd;anyURI">http://www.gsma.com/newsroom/wp-content/uploads/2013/10/TS.25-v1.0.pdf</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000010 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000010">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <dc:date rdf:datatype="&xsd;string">1999-05-28</dc:date>
+        <prism:organization rdf:datatype="&xsd;string">3GPP</prism:organization>
+        <dc:author rdf:datatype="&xsd;string">3GPP (3rd Generation Partnership Project)</dc:author>
+        <dc:title rdf:datatype="&xsd;string">Contents of RRC Connection Request</dc:title>
+        <rdfs:comment rdf:datatype="&xsd;string">Original 1999 specification </rdfs:comment>
+        <prism:url rdf:datatype="&xsd;anyURI">http://www.3gpp.org/ftp/tsg_ran/wg2_rl2/TSGR2_04/Docs/Pdf/r2-99415.PDF</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000011 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000011">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <prism:startingPage rdf:datatype="&xsd;integer">115</prism:startingPage>
+        <prism:organization rdf:datatype="&xsd;string">Information Technology Industry Council</prism:organization>
+        <dc:title rdf:datatype="&xsd;string">Information technology - AT Attachment 8 - ATA/ATAPI Command Set (ATA8-ACS)</dc:title>
+        <dc:author rdf:datatype="&xsd;string">T13 Technical Committee</dc:author>
+        <prism:url>http://www.t13.org/documents/UploadedDocuments/docs2008/D1699r6a-ATA8-ACS.pdf</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000012 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000012">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <prism:organization rdf:datatype="&xsd;string">3GPP</prism:organization>
+        <dc:author rdf:datatype="&xsd;string">3GPP (3rd Generation Partnership Project)</dc:author>
+        <dc:title rdf:datatype="&xsd;string">TIA/EIA-41-D MODIFICATIONS TO SUPPORT IMSI</dc:title>
+        <prism:url rdf:datatype="&xsd;anyURI">http://www.3gpp2.org/public_html/specs/N.S0009-0_v1.0.pdf</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000013 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000013">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <prism:startingPage rdf:datatype="&xsd;integer">262</prism:startingPage>
+        <rdfs:comment rdf:datatype="&xsd;string">Relevant data contained in &apos;USB_20.pdf&apos; in Table 9-8. Standard Device Descriptor</rdfs:comment>
+        <dc:author rdf:datatype="&xsd;string">USB Implementers Forum</dc:author>
+        <prism:organization rdf:datatype="&xsd;string">USB Implementers Forum</prism:organization>
+        <dc:title rdf:datatype="&xsd;string">Universal Serial Bus Specification</dc:title>
+        <prism:url rdf:datatype="&xsd;anyURI">http://www.usb.org/developers/docs/usb20_docs/</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000014 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000014">
+        <rdf:type rdf:resource="&version15;WebEntry"/>
+        <dc:date rdf:datatype="&xsd;string">2010</dc:date>
+        <dc:author rdf:datatype="&xsd;string">SANS</dc:author>
+        <prism:organization rdf:datatype="&xsd;string">SANS</prism:organization>
+        <dc:title rdf:datatype="&xsd;string">exFAT (Extended FAT) File System Revealed and Dissected</dc:title>
+        <prism:url rdf:datatype="&xsd;anyURI">http://digital-forensics.sans.org/summit-archives/2010/10-exfat-ham.pdf</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000015 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000015">
+        <rdf:type rdf:resource="&version15;WebEntry"/>
+        <dc:author rdf:datatype="&xsd;string">Harlan Carvey</dc:author>
+        <prism:url>http://windowsir.blogspot.co.uk/2010/11/updates.html</prism:url>
+        <dc:date>2010-11-17</dc:date>
+        <dc:title>Windows Incident Response</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000016 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000016">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <prism:organization rdf:datatype="&xsd;string">Apple</prism:organization>
+        <dc:author rdf:datatype="&xsd;string">Apple</dc:author>
+        <dc:title rdf:datatype="&xsd;string">Deprecated UIDevice Methods</dc:title>
+        <prism:url>https://developer.apple.com/library/ios/documentation/uikit/reference/UIDevice_Class/DeprecationAppendix/AppendixADeprecatedAPI.html#//apple_ref/occ/instp/UIDevice/uniqueIdentifier</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000017 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000017">
+        <rdf:type rdf:resource="&version15;WebEntry"/>
+        <dc:author rdf:datatype="&xsd;string">BlackBag</dc:author>
+        <prism:organization>Blackbag</prism:organization>
+        <dc:date>2011-02-01</dc:date>
+        <prism:url>https://www.blackbagtech.com/blog/2011/02/01/snow-leopard-logs-usb-serial-numbers</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000018 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000018">
+        <rdf:type rdf:resource="&version15;WebEntry"/>
+        <prism:url>http://www.sans.org/reading-room/whitepapers/forensics/reverse-engineering-microsoft-exfat-file-system-33274</prism:url>
+        <dc:author>Robert Schullich</dc:author>
+        <dc:date>2009-01-12</dc:date>
+        <prism:organization>SANS</prism:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000019 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000019">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <dc:date rdf:datatype="&xsd;dateTime">2003-12-06T09:00:00</dc:date>
+        <dc:title rdf:datatype="&xsd;string">Detailed Explanation of FAT Boot Sector</dc:title>
+        <prism:organization rdf:datatype="&xsd;string">Microsoft</prism:organization>
+        <prism:url rdf:datatype="&xsd;anyURI">http://support.microsoft.com/kb/140418</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000020 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000020">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <dc:title rdf:datatype="&xsd;string">Disk Concepts and Troubleshooting</dc:title>
+        <prism:organization rdf:datatype="&xsd;string">Microsoft</prism:organization>
+        <prism:url rdf:datatype="&xsd;anyURI">http://technet.microsoft.com/en-us/library/cc977221.aspx</prism:url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000021 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000021">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <prism:organization>USB Implementers Forum</prism:organization>
+        <prism:url>http://www.usb.org/developers/docs/devclass_docs/usbmassbulk_10.pdf</prism:url>
+        <dc:title>Universal Serial Bus Mass Storage Class: Bulk-Only Transport</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000022 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000022">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <prism:url>http://www.itu.int/rec/dologin_pub.asp?lang=e&amp;id=T-REC-E.118-200605-I!!PDF-E&amp;type=items</prism:url>
+        <dc:title>E.118: OVERALL NETWORK OPERATION, TELEPHONE SERVICE, SERVICE OPERATION AND HUMAN FACTORS</dc:title>
+        <prism:organization>ITU-T</prism:organization>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Ref_000023 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Ref_000023">
+        <rdf:type rdf:resource="&version15;DeveloperPages"/>
+        <version15:dateAddedToDESO rdf:datatype="&xsd;dateTime">2017-06-01T09:00:00</version15:dateAddedToDESO>
+        <prism:organization rdf:datatype="&xsd;string">Microsoft</prism:organization>
+        <dc:title rdf:datatype="&xsd;string">[MS-SHLLINK]: Shell Link (.LNK) Binary File Format</dc:title>
+        <prism:url rdf:datatype="&xsd;anyURI">https://msdn.microsoft.com/en-us/library/dd871305</prism:url>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Artfct_000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000001 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000001">
+        <rdf:type rdf:resource="&version15;Apple_Serial_Number_Identifier"/>
+        <rdfs:label xml:lang="en">Apple_Serial_Number_Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000002 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000002">
+        <rdf:type rdf:resource="&version15;Hard_Disk_Drive_Identifier"/>
+        <rdfs:label xml:lang="en">Hard_Disk_Manufacturer_Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000003 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000003">
+        <rdf:type rdf:resource="&version15;Hard_Disk_Drive_Identifier"/>
+        <rdfs:label xml:lang="en">Hard_Disk_Model_Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000004 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000004">
+        <rdf:type rdf:resource="&version15;Hard_Disk_Drive_Identifier"/>
+        <rdfs:label xml:lang="en">Hard_Disk_Serial_Number_Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000005 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000005">
+        <rdf:type rdf:resource="&version15;Mobile_Phone_Handset_Identifier"/>
+        <rdfs:label xml:lang="en">Handset_IMEI_Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000006 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000006">
+        <rdf:type rdf:resource="&version15;Network_Address_Identifier"/>
+        <rdfs:label rdf:datatype="&xsd;string">IEEE 802</rdfs:label>
+        <rdfs:label xml:lang="en">EUI-48 Network_MAC_Address_Type</rdfs:label>
+        <version15:entryFormat>hexadecimal digits with no separators</version15:entryFormat>
+        <version15:entryLength>12</version15:entryLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000007 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000007">
+        <rdf:type rdf:resource="&version15;SIM_Identifier"/>
+        <rdfs:label xml:lang="en">SIM_Card_ICCID_Type</rdfs:label>
+        <version15:entryLength>19</version15:entryLength>
+        <rdfs:comment>Does not include Luhn value</rdfs:comment>
+        <version15:entryFormat>Digits</version15:entryFormat>
+        <version15:hasProvenanceReference rdf:resource="&version15;Ref_000022"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000008 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000008">
+        <rdf:type rdf:resource="&version15;SIM_Identifier"/>
+        <rdfs:label xml:lang="en">SIM_Card_IMSI_Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000009 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000009">
+        <rdf:type rdf:resource="&version15;USB_Device_Identifier"/>
+        <rdfs:label xml:lang="en">USB_Device_Vendor_Type_ID</rdfs:label>
+        <version15:entryFormat>Two Byte Hex</version15:entryFormat>
+        <rdfs:comment>idVendor is reported back by device as two byte hex value. However, the device may also store a string representation. This artefcat type is for the hex value</rdfs:comment>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000021"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000010 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000010">
+        <rdf:type rdf:resource="&version15;USB_Device_Identifier"/>
+        <rdfs:label xml:lang="en">USB_Device_Product_Type_ID</rdfs:label>
+        <version15:entryFormat>Two Byte Hex</version15:entryFormat>
+        <rdfs:comment>idProduct is reported back by device as two byte hex value. However, the device may also store a string representation. This artefcat type is for the hex value</rdfs:comment>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000021"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000011 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000011">
+        <rdf:type rdf:resource="&version15;USB_Device_Identifier"/>
+        <rdfs:label xml:lang="en">USB_Device_Serial_Number_String</rdfs:label>
+        <rdfs:comment>See para 4.1.1 in provenance reference. The serial number is a unicode string. The most sensible format for reporting is as this string. Consideration could be given to reorting the Unicode but this woud cause problems since many log files would not contain this Unicode making comparison difficult. As such, the second unicode byte has been ignored.</rdfs:comment>
+        <version15:entryLength>&gt;=12 Bytes</version15:entryLength>
+        <version15:entryFormat>Comprised only of &quot;0&quot; to &quot;9&quot; and &quot;A&quot; to &quot;F&quot;</version15:entryFormat>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000021"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000012 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000012">
+        <rdf:type rdf:resource="&version15;File_System_Identifier"/>
+        <rdfs:label xml:lang="en">NTFS_ObjectID_Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000013 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000013">
+        <rdf:type rdf:resource="&version15;File_System_Identifier"/>
+        <rdfs:label xml:lang="en">Volume_Label_Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000014 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000014">
+        <rdf:type rdf:resource="&version15;File_System_Identifier"/>
+        <rdfs:label xml:lang="en">Volume_Serial_Number_Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000015 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000015">
+        <rdf:type rdf:resource="&version15;IP_Address_Identifier"/>
+        <rdfs:label xml:lang="en">IP_Address_Ver_4_Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000016 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000016">
+        <rdf:type rdf:resource="&version15;IP_Address_Identifier"/>
+        <rdfs:label xml:lang="en">IP_Address_Ver_6_Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000017 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000017">
+        <rdf:type rdf:resource="&version15;SSID_Identifier"/>
+        <rdfs:label xml:lang="en">SSID_Type</rdfs:label>
+        <rdfs:comment>Important to use hexadecimal version since not all SSID values may be human readable</rdfs:comment>
+        <version15:entryFormat>Hexadecimal</version15:entryFormat>
+        <version15:entryLength>0 to 32</version15:entryLength>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000007"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000018 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000018">
+        <rdf:type rdf:resource="&version15;Apple_UDID_Identifier"/>
+        <rdfs:label rdf:datatype="&xsd;string">Apple_Device_UDID</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000019 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000019">
+        <rdf:type rdf:resource="&version15;USB_Device_Identifier"/>
+        <rdfs:label>USB_Device_Vendor_Type_String</rdfs:label>
+        <version15:entryFormat>ascii</version15:entryFormat>
+        <version15:hasProvCodeManufacturerStatement rdf:resource="&version15;Ref_000021"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000020 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000020">
+        <rdf:type rdf:resource="&version15;Network_Address_Identifier"/>
+        <rdfs:label>EUI-64 Network_MAC_Address_Type</rdfs:label>
+        <version15:entryLength>16</version15:entryLength>
+        <version15:entryFormat>hexadecimal digits with no separators</version15:entryFormat>
+        <rdfs:comment>Used for Firewire (IEEE 1394) and IP v6</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000021 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000021">
+        <rdf:type rdf:resource="&version15;Organization"/>
+        <rdfs:label>Organization_Name</rdfs:label>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_name</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000022 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000022">
+        <rdf:type rdf:resource="&version15;Person"/>
+        <rdfs:label>Person_Family_Name</rdfs:label>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_familyName</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000023 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000023">
+        <rdf:type rdf:resource="&version15;Person"/>
+        <rdfs:label>Person_First_Name</rdfs:label>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_firstName</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000024 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000024">
+        <rdf:type rdf:resource="&version15;Person"/>
+        <rdfs:label>Person_Birthday</rdfs:label>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_birthday</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000025 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000025">
+        <rdf:type rdf:resource="&version15;Person"/>
+        <rdfs:label>Person_Phone_Number</rdfs:label>
+        <rdfs:isDefinedBy>http://xmlns.com/foaf/spec/#term_phone</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000026 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000026">
+        <rdf:type rdf:resource="&version15;Online_account"/>
+        <rdfs:label>Twitter_ID</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000027 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000027">
+        <rdf:type rdf:resource="&version15;Online_account"/>
+        <rdfs:label>Facebook_ID</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000028 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000028">
+        <rdf:type rdf:resource="&version15;Online_account"/>
+        <rdfs:label>Apple_iTunes_ID</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owenbrady/ontologies/2015/version15#Type_000029 -->
+
+    <owl:NamedIndividual rdf:about="&version15;Type_000029">
+        <rdf:type rdf:resource="&version15;Country_Codes"/>
+        <rdfs:label>Phone_Country_Code</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
+
+    <owl:NamedIndividual rdf:about="&geo;alt">
+        <rdf:type rdf:resource="&version15;Geo_Coordinates"/>
+        <rdfs:comment>Altitude in decimal metres above elipsoid</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:NamedIndividual rdf:about="&geo;lat">
+        <rdf:type rdf:resource="&version15;Geo_Coordinates"/>
+        <rdfs:comment>Decimal degrees</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:NamedIndividual rdf:about="&geo;long">
+        <rdf:type rdf:resource="&version15;Geo_Coordinates"/>
+        <rdfs:comment>Decimal degrees</rdfs:comment>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
